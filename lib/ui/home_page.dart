@@ -56,31 +56,30 @@ class _HomePageState extends State<HomePage> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           ConstrainedBox(
-            
             constraints: BoxConstraints(maxWidth: 400),
             child: Container(
               padding: const EdgeInsets.all(10.0),
               child: TextField(
-              decoration: InputDecoration(
-                labelText: 'Pesquise Aqui',
-                labelStyle: TextStyle(color: Colors.white, fontSize: 18.0),
-                border: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.white)),
-                enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.white)),
-                focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.yellowAccent)),
+                decoration: InputDecoration(
+                  labelText: 'Pesquise Aqui',
+                  labelStyle: TextStyle(color: Colors.white, fontSize: 18.0),
+                  border: OutlineInputBorder(
+                      borderSide: BorderSide(color: Colors.white)),
+                  enabledBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color: Colors.white)),
+                  focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color: Colors.yellowAccent)),
+                ),
+                style: TextStyle(color: Colors.white, fontSize: 25.0),
+                textAlign: TextAlign.center,
+                onSubmitted: (text) {
+                  setState(() {
+                    _search = text;
+                    _offset = 0;
+                  });
+                },
               ),
-              style: TextStyle(color: Colors.white, fontSize: 25.0),
-              textAlign: TextAlign.center,
-              onSubmitted: (text) {
-                setState(() {
-                  _search = text;
-                  _offset = 0;
-                });
-              },
             ),
-            ) ,
           ),
           Expanded(
             child: FutureBuilder(
