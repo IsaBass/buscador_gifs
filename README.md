@@ -22,6 +22,7 @@ App Buscador de Gifs. Utiliza API gratuita giphy.com
 
 ##### Outros Projetos Flutter:
 ###### [DevQuiz #NLW5 RocketSeat](https://github.com/IsaBass/nlw5_devquiz) (SetState, ValueNotifier, AnimationBuilder, share_plus)
+###### [Agenda de Contatos](https://github.com/IsaBass/agenda_contatos)  (Banco SQL local, camera)
 <!-- ###### [Buscador de gifs](https://github.com/IsaBass/buscador_gifs) (share, http, transparent_image) -->
 ###### [To-Do_Offline](https://github.com/IsaBass/todo_offline) (path_provider, json)
 ###### [Conversor de Moedas](https://github.com/IsaBass/conversor_moedas) (Dio, http)
